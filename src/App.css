@@ -60,6 +60,8 @@ body {
 .index {
   font-weight: 500; 
   color: #f1f1f1;
+  display: flex;
+  justify-content: right;
 }
 
 .owner {
@@ -86,6 +88,6 @@ body {
 }
 
 .repo-container {
-  border-bottom: 1px solid #464646;
+  border-bottom: 2px solid #464646;
   padding-bottom: 40px;
 }
