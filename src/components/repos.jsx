@@ -15,7 +15,7 @@ export default function Repos() {
     const data = await res.json();       
     setRepos(data)
     setIsLoading(false)
-      console.log(data)
+      // console.log(data)
     };
     fetchUsers();
   }, []);
@@ -28,7 +28,7 @@ export default function Repos() {
   const currentRepos = repos.slice(indexOfFirstRepo, indexOfLastRepo)
 
    // Mapping Repo details
-  const reposMapped = currentRepos.map(((item, index) => <RepoDetails key={item.id} title={item.name} index={index} owner={item.owner.login} id={item.id} 
+  const reposMapped = currentRepos.map(((item, index) => <RepoDetails key={item.id} title={item.name} index={index} owner={item.owner.login} id={item.name} 
   />))
   
   // Create page array
@@ -43,7 +43,7 @@ export default function Repos() {
      return <button key={number} onClick={(e) => setCurrentPage(number)} className="page-link">{number}</button>
   })
   
-  return (
+  return isLoading ? (<img src="/src/loading.gif"></img>) : (
     <div>
       <h1 className="Kegilka headline">a flashy ninja weaving codes</h1>
       <div className="repo-details">{reposMapped} </div>
