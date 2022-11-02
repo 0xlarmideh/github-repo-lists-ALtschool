@@ -28,7 +28,7 @@ export default function Repos() {
   const currentRepos = repos.slice(indexOfFirstRepo, indexOfLastRepo)
 
    // Mapping Repo details
-  const reposMapped = currentRepos.map(((item, index) => <RepoDetails key={item.id} title={item.name} index={index} owner={item.owner.login} 
+  const reposMapped = currentRepos.map(((item, index) => <RepoDetails key={item.id} title={item.name} index={index} owner={item.owner.login} id={item.id} 
   />))
   
   // Create page array
