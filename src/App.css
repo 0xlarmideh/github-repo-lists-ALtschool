@@ -1,5 +1,91 @@
-main {
+/* main {
   text-align: center;
   vertical-align: center;
   line-height: 100vh
+} */
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  
+}
+@font-face {
+  font-family: "Kegilka";   /*Can be any text*/
+  src: local("Kegilka"),
+    url("./Kegilka.otf") format("opentype");
+}
+.navbar {
+  display:flex;
+  gap:30px;
+  margin-bottom: 50px;
+}
+.nav-items {
+  color:white;
+  font-family: "helvetica";
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 400;
+  font-size:16px;
+}
+
+body {
+  background:black;
+  color:white;
+  margin:4rem 8rem;
+/*   font-size:10px; */
+}
+
+.kegilka {
+  font-family: "Kegilka";
+  font-size: 5.4rem;
+  line-height: 5rem;
+}
+
+.headline {
+  margin-bottom:80px;
+}
+
+.repo-title, .index {
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  font-size:48px;
+}
+
+.repo-title {
+  margin-bottom:20px;
+  color: #c2c2c2;
+  font-weight: 400;  
+}
+
+.index {
+  font-weight: 500; 
+  color: #f1f1f1;
+}
+
+.owner {
+  font-family: "helvetica";
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size:20px;
+  margin-bottom: 60px;
+  color: #464646;
+}
+
+.links {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "inter";
+  color: #c2c2c2;
+  text-align: right;
+}
+
+.repo-details {
+  display:flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.repo-container {
+  border-bottom: 1px solid #464646;
+  padding-bottom: 40px;
 }

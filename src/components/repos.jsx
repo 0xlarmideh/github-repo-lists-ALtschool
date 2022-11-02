@@ -1,0 +1,60 @@
+import { useEffect, useState } from "react"
+import RepoDetails from './repo-details.jsx'
+
+export default function Repos() {
+ const [repos, setRepos] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [perPage] = useState(5);
+  const [isLoading, setIsLoading] = useState(true)
+  
+  // Call randomUser.me API
+  useEffect(() =>  {
+    const url = "https://api.github.com/users/0xlarmideh/repos";
+    const fetchUsers = async () => {
+    const res = await fetch(url)
+    const data = await res.json();       
+    setRepos(data)
+    setIsLoading(false)
+      console.log(data)
+    };
+    fetchUsers();
+  }, []);
+
+   // Pagination
+  // Get Current Posts
+  const length = repos.length
+  const indexOfLastRepo = currentPage * perPage;
+  const indexOfFirstRepo = indexOfLastRepo - perPage;
+  const currentRepos = repos.slice(indexOfFirstRepo, indexOfLastRepo)
+
+   // Mapping user details
+  const reposMapped = currentRepos.map(((item, index) => <RepoDetails key={item.id} title={item.name} index={index} owner={item.owner.login} 
+  />))
+  
+  // Create page array
+  const pageNumbersArr = [];
+  let reposLength = Math.ceil(length/perPage)
+  for(let i=1; i<=reposLength; i++) {
+    pageNumbersArr.push(i)
+  }
+    
+  // Map over Page Array and Change page
+  const pageNumbers = pageNumbersArr.map(number => {
+     return <button key={number} onClick={(e) => setCurrentPage(number)} className="page-link">{number}</button>
+  })
+  
+  return (
+    <div>
+      <h1 className="Kegilka headline">a flashy ninja weaving codes</h1>
+      <div className="repo-details">{reposMapped} </div>
+      <div className="current-page">Page <span className="strong">{currentPage} </span> of {reposLength} </div><br></br>
+        <section className="pagination-container">
+          <button className="page-link" disabled={currentPage <= 1} aria-disabled={currentPage <= 1} onClick={() => setCurrentPage(prev => prev-1)}>Prev</button>
+          <div className="pagination">{pageNumbers}</div>
+          <button className="page-link" disabled={currentPage >= reposLength} aria-disabled={currentPage >= 1} onClick={() => setCurrentPage(prev => prev+1)}>Next</button>
+        </section>
+    </div>
+  )
+}
+
+// export default Repos
