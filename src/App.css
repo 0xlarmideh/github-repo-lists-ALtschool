@@ -14,14 +14,16 @@
   src: local("Kegilka"),
     url("./Kegilka.otf") format("opentype");
 }
+
 .navbar {
   display:flex;
   gap:30px;
   margin-bottom: 50px;
 }
+
 .nav-items {
   color:white;
-  font-family: "helvetica";
+  font-family: "inter";
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 400;
@@ -82,9 +84,13 @@ body {
 }
 
 .repo-details {
-  display:flex;
-  flex-direction: column;
-  gap: 40px;
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.repo-details1 {
+  display:grid;
+  grid-template-columns: 1fr 2fr;
 }
 
 .repo-container {

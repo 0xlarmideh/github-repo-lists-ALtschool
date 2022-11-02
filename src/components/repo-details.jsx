@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function RepoDetails (props) {
   return (
@@ -8,7 +8,7 @@ export default function RepoDetails (props) {
         <div className="owner">{props.owner}</div>
       </div>
       <div className="index">0{props.index+1}</div>
-      <NavLink className="links">See More</NavLink>  
+      <Link to={`/${props.id}`} className="links">more info</Link>  
     </div>
   )
 }

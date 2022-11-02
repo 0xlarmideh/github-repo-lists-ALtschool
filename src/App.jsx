@@ -13,6 +13,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<SharedNavbar/>} >
             <Route index element={<Repos />} />
+            <Route path=":repoId" element={<SingleRepo />} />
             <Route path="*" element={<Error />} />
           </Route>
         </Routes>

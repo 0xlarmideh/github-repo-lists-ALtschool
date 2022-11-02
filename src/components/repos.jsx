@@ -4,10 +4,10 @@ import RepoDetails from './repo-details.jsx'
 export default function Repos() {
  const [repos, setRepos] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [perPage] = useState(5);
+  const [perPage] = useState(4);
   const [isLoading, setIsLoading] = useState(true)
   
-  // Call randomUser.me API
+  // Call Github API
   useEffect(() =>  {
     const url = "https://api.github.com/users/0xlarmideh/repos";
     const fetchUsers = async () => {
@@ -21,13 +21,13 @@ export default function Repos() {
   }, []);
 
    // Pagination
-  // Get Current Posts
+  // Get Current Repos
   const length = repos.length
   const indexOfLastRepo = currentPage * perPage;
   const indexOfFirstRepo = indexOfLastRepo - perPage;
   const currentRepos = repos.slice(indexOfFirstRepo, indexOfLastRepo)
 
-   // Mapping user details
+   // Mapping Repo details
   const reposMapped = currentRepos.map(((item, index) => <RepoDetails key={item.id} title={item.name} index={index} owner={item.owner.login} 
   />))
   
