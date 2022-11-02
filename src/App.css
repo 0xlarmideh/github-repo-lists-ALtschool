@@ -10,7 +10,7 @@
   
 }
 @font-face {
-  font-family: "Kegilka";   /*Can be any text*/
+  font-family: "Kegilka";  
   src: local("Kegilka"),
     url("./Kegilka.otf") format("opentype");
 }
@@ -39,8 +39,13 @@ body {
 
 .kegilka {
   font-family: "Kegilka";
-  font-size: 5.4rem;
-  line-height: 5rem;
+  font-size: 6.4rem;
+  line-height: 5.9rem;
+  font-weight:400;
+}
+
+.repos-title {
+  text-transform: capitalize;  
 }
 
 .headline {
@@ -97,3 +102,121 @@ body {
   border-bottom: 2px solid #464646;
   padding-bottom: 40px;
 }
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.homepage-container {
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+  height: 75vh;
+  vertical-align: center;
+}
+
+.personal-details {
+  font-size:15px;
+  font-family: "inter";
+  font-weight:300;
+  color: #c2c2c2;
+}
+
+fa-arrow-up-long {
+  transform: rotate(45deg);
+  display:inline-block;
+}
+
+.go-to-repo {
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  color:#c2c2c2;
+  text-decoration: none;
+  text-transform:uppercase;
+  font-size:18px;
+  font-family: "inter";
+  font-weight:400;
+  padding:0px 0;
+}
+
+.current-page {
+  font-size: 2rem;
+  font-weight: 300;
+  margin:3rem 0 1.5rem 0;
+  color:#c2c2c2;
+  font-family: "inter", sans-serif;
+}
+
+.pagination-container, .pagination {
+  display:flex;
+  font-family: "helvetica", sans-serif;
+  gap: .4rem;
+}
+
+.pagination-container {
+/*   margin: 4rem 0; */
+/*   margin-left:6rem; */
+}
+
+.strong {
+  font-size: 2rem;
+  font-weight: 700
+}
+
+button {
+  padding:.7rem 1.4rem;
+  font-size: 1.3rem;
+  background:none;
+  color:#c2c2c2;
+  outline:none;
+  border:1px solid #464646;
+}
+
+button:hover {
+  cursor:pointer;
+}
+
+button:active {
+  background: #d2ecfa;
+  font-weight:700;
+  color:black;
+}
+
+.active {
+  color:white;
+  border-bottom:2px solid white;
+}
+
+.grid-container {
+  margin-top: 9rem;
+  align-items: center;
+}
+
+.desc1 {
+  font-family: "inter", sans-serif;
+  font-size:18px;
+  font-size: 300;
+/*   margin-bottom: 4.8rem; */
+  color:grey;
+  }
+
+.desc-joke {
+  margin-top:2rem;
+  font-family: "inter", sans-serif;
+  font-size: 18px;
+/*   width:100%; */
+  font-weight: 300;
+} 
+
+.e404 {
+  margin:0;
+}
+
+
+/* .go-to-repo:hover {
+  border-left: 4px solid white;
+  padding:0px 20px;
+  font-size: 22px
+} */

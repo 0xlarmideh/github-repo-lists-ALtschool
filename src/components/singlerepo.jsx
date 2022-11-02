@@ -7,24 +7,22 @@ const SingleRepo = () => {
   const { repoId } = useParams();
     useEffect(() =>  {
     const url = `https://api.github.com/repos/0xlarmideh/${repoId}`;
-      console.log(url)
-      console.log(repoId)
     const fetchUsers = async () => {
     const res = await fetch(url)
     const data = await res.json();       
     setRepos(data)
     setIsLoading(false)
-      console.log(data)
     };
     fetchUsers();
   }, []);
 
-  return (
+  return isLoading ? (<img src="/src/loading.gif"></img>) : (
     <div>
       <div>
-        <h1 className="repo-title"> {repos.name} </h1>
+        <h1 className="Kegilka headline repos-title"> {repos.name} </h1>
+        <p>{new Date(repos.created_at).toUTCString()} </p>
       </div>
-      <Link to="/">Back to repos</Link>
+      <Link to="/repos">Back to repos</Link>
     </div>
   ) 
 }

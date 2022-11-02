@@ -1,6 +1,7 @@
 import './App.css'
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Repos from './components/repos.jsx'
+import Homepage from './components/homepage.jsx'
 import Error from './components/error.jsx'
 import SingleRepo from './components/singlerepo.jsx'
 import SharedNavbar from './components/shared-navbar.jsx'
@@ -20,8 +21,9 @@ export default function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<SharedNavbar/>} >
-              <Route index element={<Repos />} />
-              <Route path=":repoId" element={<SingleRepo />} />
+              <Route index element={<Homepage />} />
+              <Route path="/repos" element={<Repos />} />
+              <Route path="/repos/:repoId" element={<SingleRepo />} />
               <Route path="*" element={<Error />} />
             </Route>
           </Routes>

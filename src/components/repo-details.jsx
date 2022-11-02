@@ -8,7 +8,7 @@ export default function RepoDetails (props) {
         <div className="owner">{props.owner}</div>
       </div>
       <div className="index">0{props.index+1}</div>
-      <Link to={`/${props.id}`} className="links">more info</Link>  
+      <Link to={`/repos/${props.id}`} className="links">more info</Link>  
     </div>
   )
 }
