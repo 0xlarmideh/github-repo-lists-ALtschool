@@ -17,9 +17,12 @@
 
 .navbar {
   display:flex;
+/*   position:fixed; */
   align-items: center;
   gap:30px;
   border-bottom: 1px solid #464646;
+  z-index:1000;
+/*   background:green; */
 }
 
 .nav-items {
@@ -66,6 +69,12 @@ body {
   background: #121212;
 }
 
+.loading-gif {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  line-height: 100vh;
+}
 .repos-title {
   text-transform: capitalize;  
 }
@@ -166,8 +175,9 @@ fa-arrow-up-long {
   font-size: 2rem;
   font-weight: 300;
   margin:3rem 0 1.5rem 0;
+  padding:0rem 8rem; 
   color:#c2c2c2;
-  font-family: "inter", sans-serif;
+  font-family: "helvetica", sans-serif;
 }
 
 .pagination-container, .pagination {
@@ -177,7 +187,8 @@ fa-arrow-up-long {
 }
 
 .pagination-container {
-
+  padding:0rem 8rem;
+  margin-bottom:60px;
 }
 
 .strong {
@@ -211,8 +222,17 @@ button:active {
 }
 
 .grid-container {
-  margin-top: 9rem;
-  align-items: center;
+  height:80vh;
+  margin:0;
+  padding:0;
+}
+
+.grid-item {
+  display:flex;
+  gap:50px;
+  width: 100%;
+  padding:0rem 8rem;  
+  align-items:center;
 }
 
 .desc1 {
@@ -223,14 +243,29 @@ button:active {
   }
 
 .desc-joke {
-  margin-top:2rem;
-  font-family: "inter", sans-serif;
-  font-size: 18px;
+  margin-top:0.3rem;
+    font-family: 'Clash Display', sans-serif;  
+  font-size: 22px;
   font-weight: 300;
+  width:50%;
 } 
 
 .e404 {
   margin:0;
+}
+
+.back-home {
+  margin-top:2rem;
+  display:inline-flex;
+  align-items:center;
+  gap:1rem;
+  padding:1rem;
+    font-family: 'Clash Display', sans-serif;  
+  border: 1px solid #464646;
+  border-radius:.3rem;
+  font-size:1.6rem;
+  text-decoration:none;
+  color:#c2c2c2;
 }
 
 @media only screen and (max-width: 800px){
@@ -298,5 +333,44 @@ button:active {
   margin-bottom:40px;
 }
 
+.personal-details2 {
+  display:flex;
+  flex-direction:column;
+  justify-content:right;
+  font-size:12px;
+  margin-bottom:40px;
+}
+
+.current-page {
+  font-size: 1rem;
+  margin:2rem 0 1rem 0;
+  padding:0rem 2rem; 
+}
+
+.pagination-container {
+  padding:0rem 2rem;
+}
+
+  .strong {
+  font-size: 1rem;
+  font-weight: 700
+}
+
+button {
+  padding:.3rem .7rem;
+  font-size: 1rem;
+  font-weight:300;
+}
+
+.grid-item {
+  width: 95%;
+  padding:0rem 2rem;  
+}  
+
+.back-home {
+  padding:.5rem;
+  border-radius:.3rem;
+  font-size:1.2rem;
+}
   
 }

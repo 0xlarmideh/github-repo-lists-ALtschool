@@ -11,7 +11,7 @@ export default function Homepage () {
           <p>ABDULHAMEED BUSARI</p>
           <p>LARMIDEH@GMAIL.COM</p>
         </div>
-        <div className="personal-details">
+        <div className="personal-details personal-details2">
           <p>FRONTEND DEVELOPER</p>
           <p>NON-PRACTICING ARCHITECT</p>
           <p>ALTSCHOOL STUDENT (CLASS 22')</p> 
