@@ -10,38 +10,60 @@
   
 }
 @font-face {
-  font-family: "Kegilka";  
+  font-family: "Kegilka",;  
   src: local("Kegilka"),
     url("./Kegilka.otf") format("opentype");
 }
 
 .navbar {
   display:flex;
+  align-items: center;
   gap:30px;
-  margin-bottom: 50px;
+  border-bottom: 1px solid #464646;
 }
 
 .nav-items {
   color:white;
-  font-family: "inter";
+/*   font-family: "inter"; */
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: 400;
+  font-family: 'Clash Display', sans-serif;  
+  font-weight:400;
   font-size:16px;
+  border-left: 1px solid #464646;
+  padding: 3.93rem;
+}
+
+.nav-items3 {
+  border-right: 1px solid #464646;
 }
 
 body {
   background:black;
   color:white;
-  margin:4rem 8rem;
-/*   font-size:10px; */
 }
 
-.kegilka {
-  font-family: "Kegilka";
+.larmideh {
+  font-family: 'Clash Display', sans-serif;  
+  font-weight:600;
+  padding:3rem 8rem;
+  font-size: 40px;
+}
+
+.altschool {
+  font-family: 'Clash Display', sans-serif;  
+  font-weight:400;
+  padding:3rem 8rem;
+  font-size: 30px;
+}
+
+.Kegilka {
+  font-family: "Kegilka", 'Clash Display', sans-serif;
   font-size: 6.4rem;
   line-height: 5.9rem;
   font-weight:400;
+  padding:7rem 8rem;
+  background: #121212;
 }
 
 .repos-title {
@@ -53,10 +75,11 @@ body {
 }
 
 .repo-title, .index {
-  font-family: 'Inter', sans-serif;
-  text-transform: uppercase;
+  font-family: 'Clash Display', sans-serif;  
+  text-transform: capitalize;
   font-size:48px;
 }
+
 
 .repo-title {
   margin-bottom:20px;
@@ -89,13 +112,10 @@ body {
 }
 
 .repo-details {
-  display:grid;
-  grid-template-columns: 2fr 1fr;
-}
-
-.repo-details1 {
-  display:grid;
-  grid-template-columns: 1fr 2fr;
+  display:flex;
+  flex-direction:column;
+  margin:4rem 8rem;
+  gap:40px;
 }
 
 .repo-container {
@@ -105,6 +125,7 @@ body {
 
 .flex {
   display: flex;
+  padding:0rem 8rem;
   justify-content: space-between;
 }
 
@@ -156,8 +177,7 @@ fa-arrow-up-long {
 }
 
 .pagination-container {
-/*   margin: 4rem 0; */
-/*   margin-left:6rem; */
+
 }
 
 .strong {
@@ -185,8 +205,9 @@ button:active {
 }
 
 .active {
-  color:white;
-  border-bottom:2px solid white;
+  color:black;
+  font-weight:500;
+  background: white;
 }
 
 .grid-container {
@@ -198,7 +219,6 @@ button:active {
   font-family: "inter", sans-serif;
   font-size:18px;
   font-size: 300;
-/*   margin-bottom: 4.8rem; */
   color:grey;
   }
 
@@ -206,7 +226,6 @@ button:active {
   margin-top:2rem;
   font-family: "inter", sans-serif;
   font-size: 18px;
-/*   width:100%; */
   font-weight: 300;
 } 
 
@@ -214,9 +233,70 @@ button:active {
   margin:0;
 }
 
+@media only screen and (max-width: 800px){
+  .navbar {
+  gap:10px;
+}
 
-/* .go-to-repo:hover {
-  border-left: 4px solid white;
-  padding:0px 20px;
-  font-size: 22px
-} */
+.nav-items {
+  font-size:10px;
+  padding: .7rem;
+}
+
+.larmideh {
+  padding:.7rem 2rem;
+  font-size: 13px;
+}
+
+.altschool {
+  padding:.7rem 2rem;
+  font-size: 13px;
+}
+
+.Kegilka {
+  font-size: 4.8rem;
+  padding:5rem 2rem;
+  line-height:3.5rem;
+}
+
+.repo-title, .index {
+  font-size:24px;
+}
+
+
+.repo-title {
+  margin-bottom:10px;  
+}
+
+.owner {
+  font-size:12px;
+  margin-bottom: 30px;
+}
+
+.links {
+  font-size:10px;
+}
+
+.repo-details {
+  margin:0rem;
+  padding:.2rem 2rem;
+  gap:20px;
+}
+
+  .repo-container {
+  padding-bottom: 20px;
+}
+
+.flex {
+  display: block;
+  padding:0rem 2rem;
+  justify-content: space-between;
+}
+
+.personal-details {
+  font-size:12px;
+  margin-bottom:40px;
+}
+
+  
+}

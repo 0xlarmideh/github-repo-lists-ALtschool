@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
 
 export default function Homepage () {
+  // <Link to='/repos' className="go-to-repo"><p className="see">See my Repos</p><i className="fa-solid fa-arrow-up-long"></i></Link>
   return (
     <div className="homepage-container">
-      <Link to='/repos' className="go-to-repo"><p className="see">See my Repos</p><i className="fa-solid fa-arrow-up-long"></i></Link>  
+        
       <h1 className="Kegilka headline">a flashy ninja weaving codes</h1>
       <div className="flex">
         <div className="personal-details">

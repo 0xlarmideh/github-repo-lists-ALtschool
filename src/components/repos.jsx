@@ -45,7 +45,7 @@ export default function Repos() {
   
   return isLoading ? (<img src="/src/loading.gif"></img>) : (
     <div>
-      <h1 className="Kegilka headline">{'<' + 'undefined' + '>'} repos by larmideh </h1>
+      <h1 className="Kegilka headline repo-headline">{'<' + 'flashy' + '>'} repos by larmideh </h1>
       <div className="repo-details">{reposMapped} </div>
       <div className="current-page">Page <span className="strong">{currentPage} </span> of {reposLength} </div><br></br>
         <section className="pagination-container">
