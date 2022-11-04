@@ -250,9 +250,6 @@ button:active {
   width:50%;
 } 
 
-.e404 {
-  margin:0;
-}
 
 .back-home {
   margin-top:2rem;
@@ -363,9 +360,13 @@ button {
 }
 
 .grid-item {
-  width: 95%;
+  display:block;
   padding:0rem 2rem;  
 }  
+
+  .desc-joke {
+  width: 95%;
+  }
 
 .back-home {
   padding:.5rem;
