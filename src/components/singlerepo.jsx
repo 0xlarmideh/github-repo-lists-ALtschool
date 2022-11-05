@@ -17,12 +17,9 @@ const SingleRepo = () => {
     fetchUsers();
   }, []);
 
-  // const date = repos.created_at.slice(0,10)
-  // console.log(repos.created_at.slice(0,10))
   let dateObj = new Date(repos.created_at);
-
-let myDate = (dateObj.getUTCFullYear()) + "/" + (dateObj.getMonth() + 1)+ "/" + (dateObj.getUTCDate());
-  return isLoading ? (<img src="/src/loading.gif"></img>) : (
+  let myDate = (dateObj.getUTCFullYear()) + "/" + (dateObj.getMonth() + 1)+ "/" + (dateObj.getUTCDate());
+  return (
     <div>
       <div>
         <p className="repo-language">{repos.language} </p>

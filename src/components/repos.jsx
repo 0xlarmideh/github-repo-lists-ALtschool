@@ -43,7 +43,7 @@ export default function Repos() {
      return <button key={number} onClick={(e) => setCurrentPage(number)} className="page-link">{number}</button>
   })
   
-  return isLoading ? (<img className="loading-gif" src="/src/loading.gif"></img>) : (
+  return isLoading ? (<img className="loading-gif" src="/loading.gif"></img>) : (
     <div>
       <h1 className="Kegilka headline repo-headline">{'<' + 'flashy' + '>'} repos by larmideh </h1>
       <div className="repo-details">{reposMapped} </div>
