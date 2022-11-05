@@ -2,25 +2,24 @@ import { useEffect, useState } from "react"
 import RepoDetails from './repo-details.jsx'
 
 export default function Repos() {
- const [repos, setRepos] = useState([]);
+  const [repos, setRepos] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [perPage] = useState(4);
-  const [isLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(true);
   
   // Call Github API
   useEffect(() =>  {
     const url = "https://api.github.com/users/0xlarmideh/repos";
     const fetchUsers = async () => {
-    const res = await fetch(url)
-    const data = await res.json();       
-    setRepos(data)
-    setIsLoading(false)
-      // console.log(data)
+    const res = await fetch(url);
+    const data = await res.json();      
+    setRepos(data);
+    setIsLoading(false);
     };
     fetchUsers();
   }, []);
 
-   // Pagination
+  // Pagination
   // Get Current Repos
   const length = repos.length
   const indexOfLastRepo = currentPage * perPage;
@@ -57,4 +56,4 @@ export default function Repos() {
   )
 }
 
-// export default Repos
+  // export default Repos
