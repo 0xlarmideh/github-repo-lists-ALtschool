@@ -21,14 +21,20 @@ const SingleRepo = () => {
   let myDate = (dateObj.getUTCFullYear()) + "/" + (dateObj.getMonth() + 1)+ "/" + (dateObj.getUTCDate());
   return (
     <div>
-      <div>
-        <p className="repo-language">{repos.language} </p>
-        <h1 className="Kegilka headline repos-title"> {repos.name} </h1>
-        <p className="repo-date">{myDate}</p>
+      <div className="repo-top">
+        <p className="singrepo-language">{repos.language} </p>
+        <h1 className="singrepo-title"> {repos.name} </h1>
+        <p className="singrepo-date">{myDate}</p>
       </div>
-      <div className="repo-description">{repos.description}</div>
-      <a className="check-github" href={githubUrl}>Check on Github</a>
-      <Link to="/repos">Back to repos</Link>
+      <div className="desc-container">
+        <div className="repo-desc-head">Descriptions</div>
+        <div className="repo-description">{repos.description === null ? <div>No descriptions available</div> : repos.description} </div>
+        <div className="singrepo-links">
+          <a className="back-home" href={githubUrl}>Check on Github</a>
+        <Link className="back-home" to="/repos">Back to repos</Link>
+        </div>
+        
+      </div>
     </div>
   ) 
 }

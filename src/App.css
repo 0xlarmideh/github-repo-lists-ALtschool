@@ -265,6 +265,58 @@ button:active {
   color:#c2c2c2;
 }
 
+.repo-top {
+  padding:7rem 8rem;
+  background: #121212;
+}
+
+.singrepo-language, .singrepo-date {
+  text-transform: uppercase;
+  font-family: 'Helvetica', sans-serif;
+  color: #bdbdbd;
+  font-size: 15px;
+}
+
+.singrepo-language {
+  margin-bottom:22px;
+}
+
+.singrepo-title {
+  font-family: "Kegilka", 'Clash Display', sans-serif;
+  font-size: 6.4rem;
+  line-height: 5.9rem;
+  font-weight:400;
+  text-transform: capitalize;
+}
+
+.desc-container {
+  padding:3rem 8rem 7rem 24rem;
+}
+
+.repo-desc-head, .repo-description {
+  font-family: 'helvetica', sans-serif;  
+}
+
+.repo-desc-head {
+  font-size: 32px;
+  font-weight: 700;
+  line-height:40px;
+  color: #d9d9d9;
+  letter-spacing: -1px; 
+}
+
+.repo-description {
+  font-weight: 300;
+  font-size: 22px;
+  margin-top:20px;
+  color: #bdbdbd;
+}
+
+.singrepo-links {
+  display: flex;
+  gap:24px;
+}
+
 @media only screen and (max-width: 800px){
   .navbar {
   gap:10px;
@@ -373,5 +425,23 @@ button {
   border-radius:.3rem;
   font-size:1.2rem;
 }
-  
+
+  .repo-top {
+  padding:4rem 2rem;
+}
+
+.singrepo-language {
+  margin-bottom:22px;
+}
+
+.singrepo-title {
+  font-size: 3rem;
+  line-height: 2.7rem;
+  margin-bottom:22px;
+}
+
+.desc-container {
+  padding:3rem 2rem 3rem 2rem;
+}
+
 }
