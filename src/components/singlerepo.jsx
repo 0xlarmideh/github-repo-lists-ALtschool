@@ -41,7 +41,7 @@ const SingleRepo = () => {
           <div className="repo-desc-head">Descriptions</div>
           <div className="repo-description">{repos.description === null ? <div>No descriptions available</div> : repos.description} </div>
           <div className="singrepo-links">
-            <a className="back-home" href={githubUrl}>Check on Github</a>
+            <a className="back-home" href={githubUrl} target="_blank" rel="noopener noreferrer"  >Check on Github</a>
             <Link className="back-home" to="/repos">Back to repos</Link>
           </div>
         </div>
