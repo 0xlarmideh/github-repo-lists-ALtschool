@@ -50,7 +50,9 @@ export default function Repos() {
           <meta 
             name="description"
             content="This page displays all repositories details from 0xlarmideh's Github"
+            rel="/repos"
             />
+          <link rel="canonical" href="/repos" />
         </Helmet>
       
      { isLoading ? (<img className="loading-gif" src="/loading.gif"></img>) : (

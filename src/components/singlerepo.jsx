@@ -29,6 +29,7 @@ const SingleRepo = () => {
           name="description"
           content="This page displays single repository details from 0xlarmideh's Github"
         />
+          <link rel="canonical" href="/repos/:repoId" />
       </Helmet>
 
       <div>

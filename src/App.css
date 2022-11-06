@@ -3,6 +3,8 @@
   vertical-align: center;
   line-height: 100vh
 } */
+
+
 * {
   box-sizing: border-box;
   margin:0;
@@ -46,6 +48,7 @@
 }
 
 body {
+  width:100vw;
   background:black;
   color:white;
 }

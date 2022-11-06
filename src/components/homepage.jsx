@@ -9,6 +9,7 @@ export default function Homepage () {
             name="description"
             content="This is the homepage for AltSchool second semester exam, Question 1 developed by Abdulhameed Busari"
             />
+          <link rel="canonical" href="/" />
         </Helmet>
       <div className="homepage-container">
         <h1 className="Kegilka headline">a flashy ninja weaving codes</h1>

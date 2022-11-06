@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import {useErrorHandler} from 'react-error-boundary'
+import { Helmet } from 'react-helmet-async';
 
 const maxCount = 2;
 
@@ -22,10 +23,21 @@ const ErrorBound = () => {
 
     
   return (
-    <div classname="error-bound">
-      <div className="Kegilka error-head">{count} </div>
+    <>
+      <Helmet>
+        <title>ErrorBoundary Test Page</title>
+        <meta
+          name="description"
+          content="This page is specifically for testing error boundary"
+        />
+        <link rel="canonical" href="/errorboundary" />
+      </Helmet>
+      <div classname="error-bound">
+      <h1 className="Kegilka error-head">{count} </h1>
       <button className="back-home error-link" onClick={handleClick} >Counter</button>
     </div>
+    </>
+    
     )
 }
 

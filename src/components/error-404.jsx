@@ -10,6 +10,7 @@ export default function Error() {
             name="description"
             content="A page nobody ever wants to visit, but you still got here. Stubborn Kid!"
             />
+          <link rel="canonical" href="*" />
         </Helmet>
     <section className='grid-container'>
         <h1 className="Kegilka headline">404</h1>
