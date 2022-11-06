@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import RepoDetails from './repo-details.jsx'
+import { Helmet } from 'react-helmet-async';
 
 export default function Repos() {
   const [repos, setRepos] = useState([]);
@@ -17,7 +18,7 @@ export default function Repos() {
     setIsLoading(false);
     };
     fetchUsers();
-  }, []);
+  }, [repos]);
 
   // Pagination
   // Get Current Repos
@@ -42,7 +43,20 @@ export default function Repos() {
      return <button key={number} onClick={(e) => setCurrentPage(number)} className="page-link">{number}</button>
   })
   
-  return isLoading ? (<img className="loading-gif" src="/loading.gif"></img>) : (
+  return (
+    <>
+      <Helmet>
+        <title>0xlarmideh's Repositories</title>
+        <meta 
+          name="description"
+          content="This page displays all repositories details from 0xlarmideh's Github"
+          />
+        <link 
+          rel="canonical"
+          href="/repos"
+          />
+      </Helmet>
+     { isLoading ? (<img className="loading-gif" src="/loading.gif"></img>) : (
     <div>
       <h1 className="Kegilka headline repo-headline">{'<' + 'flashy' + '>'} repos by larmideh </h1>
       <div className="repo-details">{reposMapped} </div>
@@ -53,6 +67,8 @@ export default function Repos() {
           <button className="page-link" disabled={currentPage >= reposLength} aria-disabled={currentPage >= 1} onClick={() => setCurrentPage(prev => prev+1)}>Next</button>
         </section>
     </div>
+  )}
+    </> 
   )
 }
 
