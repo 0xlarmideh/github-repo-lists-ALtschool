@@ -328,8 +328,8 @@ button:active {
     margin: 0;
 }
 
-  .error-head, .error-link {
-  margin: 0 2rem;
+ .error-link {
+  padding: 0 2rem;
 }
 
 .nav-items {
