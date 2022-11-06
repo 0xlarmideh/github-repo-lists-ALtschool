@@ -14,13 +14,13 @@ const ErrorBound = () => {
       throw new Error('Count limit Exceeded')
     } 
     else {
-      setCount((c) => c+1)
+      setCount((prev) => prev+1)
     }
-  } catch (e) {
-    handleError(e)
+  } 
+    catch (e) {
+      handleError(e)
+    }
   }
-  }
-
     
   return (
     <>
