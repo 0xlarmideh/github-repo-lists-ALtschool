@@ -42,7 +42,7 @@
 }
 
 .error-link {
-  padding: 0 8rem;
+  margin: 0 8rem;
 }
 
 body {
@@ -217,6 +217,13 @@ button:active {
   background: #d2ecfa;
   font-weight:700;
   color:black;
+  color:#ffffff;
+  
+}
+
+button:disabled {
+  color:#aba6a6;
+  
 }
 
 .active {
@@ -329,7 +336,7 @@ button:active {
 }
 
  .error-link {
-  padding: 0 2rem;
+  margin: 0 2rem;
 }
 
 .nav-items {
