@@ -7,6 +7,7 @@ import SingleRepo from './components/singlerepo.jsx'
 import SharedNavbar from './components/shared-navbar.jsx'
 import {ErrorBoundary} from 'react-error-boundary'
 import {ErrorFallback} from "/src/components/error-fallback.jsx";
+import ErrorBound from './components/errorbound.jsx';
 // import Repos from './components/repos.jsx'
 import './Kegilka.otf'
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<SharedNavbar/>} >
               <Route index element={<Homepage />} />
+              <Route path="/errorboundary" element={<ErrorBound />} />
               <Route path="/repos" element={<Repos />} />
               <Route path="/repos/:repoId" element={<SingleRepo />} />
               <Route path="*" element={<Error />} />

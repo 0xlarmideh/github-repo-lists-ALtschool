@@ -41,6 +41,10 @@
   border-right: 1px solid #464646;
 }
 
+.error-link {
+  margin: 0 8rem;
+}
+
 body {
   background:black;
   color:white;
@@ -322,6 +326,10 @@ button:active {
   gap:10px;
   align-items: center;
     margin: 0;
+}
+
+  .error-head, .error-link {
+  margin: 0 2rem;
 }
 
 .nav-items {
