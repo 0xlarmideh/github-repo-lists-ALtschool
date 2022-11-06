@@ -320,6 +320,8 @@ button:active {
 @media only screen and (max-width: 800px){
   .navbar {
   gap:10px;
+  align-items: center;
+    margin: 0;
 }
 
 .nav-items {

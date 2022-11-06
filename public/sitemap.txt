@@ -1,0 +1,3 @@
+https://0xaltschoolfe-exam.netlify.app/
+https://0xaltschoolfe-exam.netlify.app/repos
+https://0xaltschoolfe-exam.netlify.app/repos/:repoId

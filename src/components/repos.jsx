@@ -18,7 +18,7 @@ export default function Repos() {
     setIsLoading(false);
     };
     fetchUsers();
-  }, [repos]);
+  }, []);
 
   // Pagination
   // Get Current Repos
@@ -45,17 +45,14 @@ export default function Repos() {
   
   return (
     <>
-      <Helmet>
-        <title>0xlarmideh's Repositories</title>
-        <meta 
-          name="description"
-          content="This page displays all repositories details from 0xlarmideh's Github"
-          />
-        <link 
-          rel="canonical"
-          href="/repos"
-          />
-      </Helmet>
+        <Helmet>
+          <title>0xlarmideh's Repositories</title>
+          <meta 
+            name="description"
+            content="This page displays all repositories details from 0xlarmideh's Github"
+            />
+        </Helmet>
+      
      { isLoading ? (<img className="loading-gif" src="/loading.gif"></img>) : (
     <div>
       <h1 className="Kegilka headline repo-headline">{'<' + 'flashy' + '>'} repos by larmideh </h1>

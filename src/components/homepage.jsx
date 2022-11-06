@@ -3,17 +3,13 @@ import { Helmet } from 'react-helmet-async';
 export default function Homepage () {
   return (
     <>
-      <Helmet>
-        <title>Homepage</title>
-        <meta 
-          name="description"
-          content="This is the homepage for AltSchool second semester exam, Question 1 developed by Abdulhameed Busari"
-          />
-        <link 
-          rel="canonical"
-          href="/"
-          />
-      </Helmet>
+        <Helmet>
+          <title>Homepage</title>
+          <meta 
+            name="description"
+            content="This is the homepage for AltSchool second semester exam, Question 1 developed by Abdulhameed Busari"
+            />
+        </Helmet>
       <div className="homepage-container">
         <h1 className="Kegilka headline">a flashy ninja weaving codes</h1>
         <div className="flex">
@@ -23,7 +19,7 @@ export default function Homepage () {
           </div>
           <div className="personal-details personal-details2">
             <p>FRONTEND DEVELOPER</p>
-            <p>NON-PRACTICING ARCHITECT</p>
+            <p>ALMOST PRACTICING ARCHITECT</p>
             <p>ALTSCHOOL STUDENT (CLASS 22')</p> 
           </div>
         </div>
