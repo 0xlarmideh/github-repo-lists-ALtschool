@@ -2,7 +2,7 @@ import './App.css'
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Repos from './components/repos.jsx'
 import Homepage from './components/homepage.jsx'
-import Error from './components/error.jsx'
+import Error from './components/error-404.jsx'
 import SingleRepo from './components/singlerepo.jsx'
 import SharedNavbar from './components/shared-navbar.jsx'
 import {ErrorBoundary} from 'react-error-boundary'
