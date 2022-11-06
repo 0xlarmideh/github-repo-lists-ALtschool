@@ -6,4 +6,4 @@ Implement an API fetch of your GitHub portfolio, show a page with a list of all 
 
 Created nested routes using react-router-dom, made API calls to the github API and data set to state inside a useEffect hook, implemented pagination and implemented SEO with react-helmet-async.
 
-You can find the deployed site [here](0xaltschoolfe-exam.netlify.app)
+You can find the deployed site [here](https://0xlarmideh-altschool-exam.vercel.app/)
