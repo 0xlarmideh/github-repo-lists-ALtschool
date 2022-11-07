@@ -32,13 +32,12 @@ const ErrorBound = () => {
         />
         <link rel="canonical" href="/errorboundary" />
       </Helmet>
-      <div classname="error-bound">
-      <h1 className="Kegilka error-head">{count} </h1>
-      <button className="back-home error-link" onClick={handleClick} >Counter</button>
-    </div>
-    </>
-    
-    )
+      <div className="error-bound">
+        <h1 className="Kegilka error-head">{count} </h1>
+        <button className="back-home error-link" onClick={handleClick} >Counter</button>
+      </div>
+    </> 
+  )
 }
 
 export default ErrorBound

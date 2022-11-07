@@ -55,7 +55,7 @@ export default function Repos() {
           <link rel="canonical" href="/repos" />
         </Helmet>
       
-     { isLoading ? (<img className="loading-gif" src="/loading.gif"></img>) : (
+     { isLoading ? (<div className="loading-gif"><img src="/loading.gif"></img></div>) : (
     <div>
       <h1 className="Kegilka headline repo-headline">{'<' + 'flashy' + '>'} repos by larmideh </h1>
       <div className="repo-details">{reposMapped} </div>
