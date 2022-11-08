@@ -1,1 +1,1 @@
-{ "rewrites": [ { "src": "/", "dest": "/" }, { "src": "*", "dest": "*"}, { "src": "/repos", "dest": "/repos" }, { "src": "/repos/:repoId", "dest": "/repos/:repoId" }, { "src": "/errorboundary", "dest": "/errorboundary" } ] }
+{ "rewrites": [ { "src": "/", "dest": "/" }, { "src": "*", "dest": "/src/components//error-404"}, { "src": "/repos", "dest": "/src/components/repos" }, { "src": "/repos/:repoId", "dest": "/src/components/singlerepo" }, { "src": "/errorboundary", "dest": "/src/components/errorboundary" } ] }
