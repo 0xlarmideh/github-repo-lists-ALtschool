@@ -22,7 +22,7 @@
   align-items: center;
   justify-content: space-between;
   gap:30px;
-  padding-right: 3.93rem;
+  padding-right: 8rem;
   border-bottom: 1px solid #464646;
 }
 
@@ -35,10 +35,6 @@
   font-size:16px;
   border-left: 1px solid #464646;
   padding: 3.93rem;
-}
-
-.nav-items3 {
-  padding-right: 0rem;
 }
 
 .error-link {
@@ -54,7 +50,7 @@ body {
 .larmideh {
   font-family: 'Clash Display', sans-serif;  
   font-weight:600;
-  padding:3rem 8rem;
+  padding:3rem 0rem 3rem 8rem;
   font-size: 40px;
 }
 
@@ -86,7 +82,6 @@ body {
   text-transform: capitalize;
   font-size:48px;
 }
-
 
 .repo-title {
   margin-bottom:20px;
@@ -335,7 +330,7 @@ button:disabled {
 
 .nav-items {
   font-size:10px;
-  padding: .7rem;
+  padding: 1rem .7rem .75rem .7rem;
 }
 
 .larmideh {
