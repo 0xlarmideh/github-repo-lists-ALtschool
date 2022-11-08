@@ -1,1 +1,1 @@
-{ "rewrites": [ { "source": "/", "destination": "/" }, { "source": "*", "destination": "*"}, { "source": "/repos", "destination": "/repos" }, { "source": "/repos/:repoId", "destination": "/repos/:repoId" }, { "source": "/errorboundary", "destination": "/errorboundary" } ] }
+{ "rewrites": [ { "src": "/", "dest": "/" }, { "src": "*", "dest": "*"}, { "src": "/repos", "dest": "/repos" }, { "src": "/repos/:repoId", "dest": "/repos/:repoId" }, { "src": "/errorboundary", "dest": "/errorboundary" } ] }
