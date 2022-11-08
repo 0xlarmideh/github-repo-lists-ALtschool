@@ -7,11 +7,8 @@ export default function Navbar() {
       <div>
         <NavLink className='nav-items' end to="/">Home</NavLink>
         <NavLink className='nav-items' to="/repos">Repos</NavLink>
-        <NavLink className='nav-items nav-items3' to="/errorboundary">Error</NavLink>    
-        
+        <NavLink className='nav-items nav-items3' to="/errorboundary">Error</NavLink>     
       </div>
-      <div className="altschool">AltSchool</div>
-      
     </nav>
   )
 }
