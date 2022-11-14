@@ -1,1 +1,3 @@
-{ "rewrites": [ { "src": "/", "dest": "/" }, { "src": "*", "dest": "/src/components//error-404"}, { "src": "/repos", "dest": "/src/components/repos" }, { "src": "/repos/:repoId", "dest": "/src/components/singlerepo" }, { "src": "/errorboundary", "dest": "/src/components/errorboundary" } ] }
+{
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}
