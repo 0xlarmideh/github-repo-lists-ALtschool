@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import RepoDetails from './repo-details.jsx'
+import RepoDetails from '../components/repo-details.jsx'
 import { Helmet } from 'react-helmet-async';
 
 export default function Repos() {
